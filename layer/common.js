@@ -181,11 +181,11 @@ COMMON.SECURITY_LEVEL = {
 };
 
 COMMON.ADDRESS_MODE = {
-    'AddrNotPresent': 0,
-    'AddrGroup': 1,
-    'Addr16Bit': 2,
-    'Addr64Bit': 3,
-    'AddrBroadcast': 15
+    'ADDR_NOT_PRESENT': 0,
+    'ADDR_GROUP': 1,
+    'ADDR_16BIT': 2,
+    'ADDR_64BIT': 3,
+    'ADDR_BROADCAST': 15
 };
 
 COMMON.SCAN_DURATION = {
