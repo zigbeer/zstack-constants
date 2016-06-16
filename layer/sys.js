@@ -1,16 +1,16 @@
 var COMMON = require('./COMMON');
 
 var SYS = {
-    CMD_STATUS: COMMON.CMD_STATUS,
-    NV_ITEM_IDS: COMMON.NV_ITEM_IDS,
+    cmdStatus: COMMON.cmdStatus,
+    nvItemIds: COMMON.nvItemIds,
 };
 
-SYS.RESET_TYPE = {
+SYS.resetType = {
     'HARD': 0x00,
     'SOFT': 0x01
 };
 
-SYS.CAPABILITIES = {
+SYS.capabilities = {
     'SYS': 0x0001,
     'MAC': 0x0002,
     'NWK': 0x0004,
@@ -23,14 +23,14 @@ SYS.CAPABILITIES = {
     'ZOAD': 0x1000
 };
 
-SYS.OSAL_TIMER_EVENT = {
+SYS.osalTimerEvent = {
     'EVENT_0': 0x00,
     'EVENT_1': 0x01,
     'EVENT_2': 0x02,
     'EVENT_3': 0x03
 };
 
-SYS.ADC_CHANNELS = {
+SYS.adcChannels = {
     'AIN0': 0x00,
     'AIN1': 0x01,
     'AIN2': 0x02,
@@ -43,14 +43,14 @@ SYS.ADC_CHANNELS = {
     'VOLT_READ': 0x0F
 };
 
-SYS.ADC_RESOLUTION = {
+SYS.adcResolution = {
     'BIT_8': 0x00,
     'BIT_10': 0x01,
     'BIT_12': 0x02,
     'BIT_14': 0x03
 };
 
-SYS.GPIO_OPERATION = {
+SYS.gpioOperation = {
     'SET_DIRECTION': 0x00,
     'SET_INPUT_MODE': 0x01,
     'SET': 0x02,
@@ -59,24 +59,24 @@ SYS.GPIO_OPERATION = {
     'READ': 0x05
 };
 
-SYS.SYS_STK_TUNE = {
+SYS.sysStkTune = {
     'TX_PWR': 0x00,        // tune power : SysStkTune = 0x00, Value = 0xFD – 0x16
     'RX_ON_IDLE': 0x01     // on/off RX  : SysStkTune = 0x01, Value = RxOnWhenIdle
 };
 
-SYS.RESET_REASON  = {
+SYS.resetReason  = {
     'POWER_UP': 0,
     'EXTERNAL': 1,
     'WATCH_DOG': 2
 };
 
-SYS.NV_ITEM_INIT_STATUS = {
+SYS.nvItemInitStatus = {
     'ALREADY_EXISTS': 0x00,
     'SUCCESS': 0x09,
     'FAILED': 0x0A
 };
 
-SYS.NV_ITEM_DELETE_STATUS = {
+SYS.nvItemDeleteStatus = {
     'SUCCESS': 0x00,
     'NOT_EXISTS': 0x09,
     'FAILED': 0x0A,

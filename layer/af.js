@@ -1,24 +1,24 @@
 var COMMON = require('./COMMON');
 
 var AF = {
-    CMD_STATUS: COMMON.CMD_STATUS,
-    ADDRESS_MODE: COMMON.ADDRESS_MODE
+    cmdStatus: COMMON.cmdStatus,
+    addressMode: COMMON.addressMode
 };
 
-AF.INTERPAN_CTL = {
+AF.interpanCtl = {
     'CTL': 0,
     'SET': 1,
     'REG': 2,
     'CHK': 3
 };
 
-AF.NETWORK_LATENCY_REQ = {
+AF.networkLatencyReq = {
     'NO_LATENCY_REQS': 0,
     'FAST_BEACONS': 1,
     'SLOW_BEACONS': 2
 };
 
-AF.OPTIONS = {
+AF.options = {
     'PREPROCESS': 0x04,             // Will force APS to callback to preprocess before calling NWK layer
     'LIMIT_CONCENTRATOR': 0x08,
     'ACK_REQUEST': 0x10,

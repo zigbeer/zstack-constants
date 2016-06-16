@@ -1,14 +1,14 @@
 var COMMON = require('./COMMON');
 
 var UTIL = {
-    CMD_STATUS: COMMON.CMD_STATUS,
-    DEV_STATES: COMMON.DEV_STATES,
-    CHANNEL_MASK: COMMON.CHANNEL_MASK,
-    SECURITY_LEVEL: COMMON.SECURITY_LEVEL,
-    ADDRESS_MODE: COMMON.ADDRESS_MODE
+    cmdStatus: COMMON.cmdStatus,
+    devStates: COMMON.devStates,
+    channelMask: COMMON.channelMask,
+    securityLevel: COMMON.securityLevel,
+    addressMode: COMMON.addressMode
 };
 
-UTIL.GET_NV_STATUS = {
+UTIL.getNvStatus = {
     'SUCCESS': 0x00,
     'GET_IEEE_ADDR_FAIL': 0x01,
     'GET_SCAN_CHANNEL_FAIL': 0x02,
@@ -17,7 +17,7 @@ UTIL.GET_NV_STATUS = {
     'GET_PRECONFIG_KEY_FAIL': 0x10,
 };
 
-UTIL.SUBSYSTEM_ID = {
+UTIL.subsystemId = {
     'SYS': 0x0100,
     'MAC': 0x0200,
     'NWK': 0x0300,
@@ -30,14 +30,14 @@ UTIL.SUBSYSTEM_ID = {
     'ALL_SUBSYSTEM': 0xFFFF
 };
 
-UTIL.DEVICE_TYPE = {
+UTIL.deviceType = {
     'NONE': 0,
     'COORDINATOR': 1,
     'ROUTER': 2,
     'END_DEVICE': 4
 };
 
-UTIL.KEY_EVENT = {
+UTIL.keyEvent = {
     'KEY_1': 0,
     'KEY_2': 1,
     'KEY_3': 2,
@@ -48,7 +48,7 @@ UTIL.KEY_EVENT = {
     'KEY_8': 7
 };
 
-UTIL.KEY_VALUE = {
+UTIL.keyValue = {
     'KEY_1': 0x01,
     'KEY_2': 0x02,
     'KEY_3': 0x04,
@@ -59,7 +59,7 @@ UTIL.KEY_VALUE = {
     'KEY_8': 0x80
 };
 
-UTIL.LED_MODE = {
+UTIL.ledMode = {
     'OFF': 0,
     'ON': 1,
     'BLINK': 2,
@@ -67,7 +67,7 @@ UTIL.LED_MODE = {
     'TOGGLE': 4
 };
 
-UTIL.LED_NUM = {
+UTIL.ledNum = {
     'LED_1': 1,
     'LED_2': 2,
     'LED_3': 3,
@@ -75,17 +75,17 @@ UTIL.LED_NUM = {
     'ALL_LEDS': 0xff
 };
 
-UTIL.SUBS_ACTION = {
+UTIL.subsAction = {
     'UNSUBSCRIBE': 0,
     'SUBSCRIBE': 1
 };
 
-UTIL.ACK_PENDING_OPTION = {
+UTIL.ackPendingOption = {
     'ACK_DISABLE': 0,
     'ACK_ENABLE': 1
 };
 
-UTIL.NODE_RELATION = {
+UTIL.nodeRelation = {
     'PARENT': 0x00,
     'CHILD_RFD': 0x01,
     'CHILD_RFD_RX_IDLE': 0x02,

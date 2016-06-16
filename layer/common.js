@@ -1,6 +1,6 @@
 var COMMON = {};
 
-COMMON.CMD_STATUS = {
+COMMON.cmdStatus = {
     // Redefined Generic Status Return Values for code backwards compatibility
     'SUCCESS': 0x00,
     'FAILURE': 0x01,
@@ -89,7 +89,7 @@ COMMON.CMD_STATUS = {
     'MAC_SRC_MATCH_INVALID_INDEX': 0xff
 };
 
-COMMON.CAPAB_INFO_MASK = {
+COMMON.capabInfoMask = {
     // 'DEVICETYPE_RFD': 0x00,
     'ALTPANCOORD': 0x01,
     'DEVICETYPE_FFD': 0x02,
@@ -99,7 +99,7 @@ COMMON.CAPAB_INFO_MASK = {
     'ALLOC_ADDR': 0x80,
 };
 
-COMMON.DEV_STATES = {
+COMMON.devStates = {
     'HOLD': 0x00,               // Initialized - not started automatically
     'INIT': 0x01,               // Initialized - not connected to anything
     'NWK_DISC': 0x02,           // Discovering PAN's to join
@@ -128,7 +128,7 @@ COMMON.DEV_STATES = {
     'BINDING_TABLE_FULL': 0x8e  // No binding table space to support operation
 };
 
-COMMON.LOGICAL_CHANNELS = {
+COMMON.logicalChannels = {
     'NONE': 0,
     'CH11': 11,
     'CH12': 12,
@@ -148,7 +148,7 @@ COMMON.LOGICAL_CHANNELS = {
     'CH26': 26
 };
 
- COMMON.CHANNEL_MASK = {
+ COMMON.channelMask = {
     //'NONE': 0x00000000,
     'CH11': 0x00000800,
     'CH12': 0x00001000,
@@ -169,7 +169,7 @@ COMMON.LOGICAL_CHANNELS = {
     'CH_ALL': 0x07FFF800
 };
 
-COMMON.SECURITY_LEVEL = {
+COMMON.securityLevel = {
     'NONE': 0x00,           // No security is used
     'MIC_32': 0x01,         // MIC-32 authentication is used
     'MIC_64': 0x02,         // MIC-64 authentication is used
@@ -180,7 +180,7 @@ COMMON.SECURITY_LEVEL = {
     'ENC_MIC_128': 0x07     // AES encryption and MIC-128 authentication are used
 };
 
-COMMON.ADDRESS_MODE = {
+COMMON.addressMode = {
     'ADDR_NOT_PRESENT': 0,
     'ADDR_GROUP': 1,
     'ADDR_16BIT': 2,
@@ -188,7 +188,7 @@ COMMON.ADDRESS_MODE = {
     'ADDR_BROADCAST': 15
 };
 
-COMMON.SCAN_DURATION = {
+COMMON.scanDuration = {
     'CH_CHANGE_REQ': 0xFE,
     'CH_MASK_CHANGE_REQ': 0xFF,
     'T_NO_BEACONS': 15,
@@ -209,7 +209,7 @@ COMMON.SCAN_DURATION = {
     'T_15_MSEC': 0
 };
 
-COMMON.NV_ITEM_IDS = {
+COMMON.nvItemIds = {
     // OSAL NV item IDs
     'EXTADDR': 0x0001,
     'BOOTCOUNTER': 0x0002,

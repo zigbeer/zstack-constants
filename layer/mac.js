@@ -1,28 +1,28 @@
 var COMMON = require('./COMMON');
 
 var MAC = {
-    CMD_STATUS: COMMON.CMD_STATUS,
-    CAPAB_INFO_MASK: COMMON.CAPAB_INFO_MASK,
-    LOGICAL_CHANNELS: COMMON.LOGICAL_CHANNELS,
-    CHANNEL_MASK: COMMON.CHANNEL_MASK,
-    SECURITY_LEVEL: COMMON.SECURITY_LEVEL,
-    ADDRESS_MODE: COMMON.ADDRESS_MODE,
-    SCAN_DURATION: COMMON.SCAN_DURATION
+    cmdStatus: COMMON.cmdStatus,
+    capabInfoMask: COMMON.capabInfoMask,
+    logicalChannels: COMMON.logicalChannels,
+    channelMask: COMMON.channelMask,
+    securityLevel: COMMON.securityLevel,
+    addressMode: COMMON.addressMode,
+    scanDuration: COMMON.scanDuration
 };
 
-MAC.ASSOC_STATUS = {
+MAC.assocStatus = {
     'SUCCESSFUL_ASSOCIATION': 0,
     'PAN_AT_CAPACITY': 1,
     'PAN_ACCESS_DENIED': 2
 };
 
-MAC.CHANNEL_PAGE = {
+MAC.channelPage = {
     'PAGE_0': 0,                            // 2.4 GHz band using O-QPSK
     'PAGE_1': 1,                            // 868 and 915 MHz bands using ASK
     'PAGE_2': 2                             // 868 and 915 MHz bands using O-QPSK
 };
 
-MAC.TX_OPT = {
+MAC.txOpt = {
     'UNDEFINED': 0x00,
     'ACK_TRANS': 0x01,
     'GTS_TRANS': 0x02,
@@ -34,19 +34,19 @@ MAC.TX_OPT = {
     'USE_POWER_CHANNEL_VALUES': 0x80,
 };
 
-MAC.COMM_REASON = {
+MAC.commReason = {
     'ASSOCIATE_RSP': 0,                     // Event sent in response to MAC_AssociateRsp()
     'ORPHAN_RSP': 1,                        // Event sent in response to MAC_OrphanRsp()
     'RX_SECURE': 2                          // Event sent as a result of receiving a secure frame
 };
 
-MAC.DISASSOC_REASON = {
+MAC.disassocReason = {
     'RESERVED': 0,
     'COOR_WISHES_DEV_LEAVE': 1,
     'DEV_WISHES_LEAVE': 2
 };
 
-MAC.KEY_ID_MODE = {
+MAC.keyIdMode = {
     // 'MODE_NONE': 0x00,                   // Key is is not used
     'MODE_NONE_OR_IMPLICIT': 0x00,          // Key is determined implicitly
     'MODE_1': 0x01,                         // Key is determined from the 1-byte key index
@@ -54,7 +54,7 @@ MAC.KEY_ID_MODE = {
     'MODE_8': 0x03                          // Key is determined from the 8-byte key index
 };
 
-MAC.BEACON_ORDER = {
+MAC.beaconOrder = {
     'ORDER_NO_BEACONS': 15,
     'ORDER_4_MINUTES': 14,      // 245760 milliseconds
     'ORDER_2_MINUTES': 13,      // 122880 milliseconds
@@ -73,7 +73,7 @@ MAC.BEACON_ORDER = {
     'ORDER_15_MSEC': 0
 };
 
-MAC.SCAN_TYPE = {
+MAC.scanType = {
     'ENERGY_DETECT': 0,
     'ACTIVE': 1,
     'PASSIVE': 2,
@@ -81,12 +81,12 @@ MAC.SCAN_TYPE = {
     'ENHANCED': 5
 };
 
-MAC.FRONT_END_MODE = {
+MAC.frontEndMode = {
     'PA_LNA_OFF': 0,
     'PA_LNA_ON': 1
 };
 
-MAC.PID_ATTR = {
+MAC.pidAttr = {
     'ACK_WAIT_DURATION': 0x40,              // Max symbols number to wait for an ack frame
     'ASSOCIATION_PERMIT': 0x41,             // TRUE if a coord is currently allowing association
     'AUTO_REQUEST': 0x42,                   // TRUE if a device auto sends a data req if its addr is listed in beacon frame

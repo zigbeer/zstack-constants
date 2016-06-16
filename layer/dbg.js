@@ -1,13 +1,13 @@
 var DBG = {};
 
-DBG.DEBUG_THRESHOLD = {
+DBG.debugThreshold = {
     'CRITICAL': 0x01,
     'ERROR': 0x02,
     'INFORMATION': 0x03,
     'TRACE': 0x04
 };
 
-DBG.COMPONENT_ID = {
+DBG.componentId = {
     'OSAL': 0,
     'MTEL': 1,
     'MTSPCI': 2,

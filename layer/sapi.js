@@ -1,11 +1,11 @@
 var COMMON = require('./COMMON');
 
 var SAPI = {
-    CMD_STATUS: COMMON.CMD_STATUS,
-    NV_ITEM_IDS: COMMON.NV_ITEM_IDS
+    cmdStatus: COMMON.cmdStatus,
+    nvItemIds: COMMON.nvItemIds
 };
 
-SAPI.ZB_DEVICE_INFO = {
+SAPI.zbDeviceInfo = {
     'DEV_STATE': 0,
     'IEEE_ADDR': 1,
     'SHORT_ADDR': 2,
@@ -16,21 +16,21 @@ SAPI.ZB_DEVICE_INFO = {
     'EXT_PAN_ID': 7
 };
 
-SAPI.BIND_ACTION = {
+SAPI.bindAction = {
     'REMOVE_BIND': 0,
     'CREATE_BIND': 1
 };
 
-SAPI.SEARCH_TYPE = {
+SAPI.searchType = {
     'ZB_IEEE_SEARCH': 1
 };
 
-SAPI.TX_OPT_ACK = {
+SAPI.txOptAck = {
     'NONE': 0x00,
     'END_TO_END_ACK': 0x01
 };
 
-SAPI.NV_ITEM_IDS_UINT8 = {
+SAPI.nvItemIdsUint8 = {
     // OSAL NV item IDs
     'EXTADDR': 0x01,
     'BOOTCOUNTER': 0x02,
