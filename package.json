@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simenkid/zstack-id.git"
+    "url": "git+https://github.com/zigbeer/zstack-id.git"
   },
   "keywords": [
     "cc-znp",
@@ -21,7 +21,7 @@
   "author": "Simen Li",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/simenkid/zstack-id/issues"
+    "url": "https://github.com/zigbeer/zstack-id/issues"
   },
-  "homepage": "https://github.com/simenkid/zstack-id#readme"
+  "homepage": "https://github.com/zigbeer/zstack-id#readme"
 }
