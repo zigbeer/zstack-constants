@@ -28,4 +28,27 @@ var ZDEFS = {
     ZDO: require('./layer/zdo.js')
 };
 
+ZDEFS.getStatus = function (code) {
+    var result;
+
+    if (typeof code === 'string' && ZDEFS.cmdStatus.hasOwnProperty(code)) {
+        result = {
+            key: code,
+            value: ZDEFS.cmdStatus[code]
+        };
+    } else if (typeof code === 'number') {
+        for (var k in ZDEFS.cmdStatus) {
+            if (ZDEFS.cmdStatus[k] === code) {
+                result = {
+                    key: k,
+                    value: code
+                };
+                break;
+            }
+        }
+    }
+
+    return result;
+};
+
 module.exports = ZDEFS;

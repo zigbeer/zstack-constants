@@ -1,4 +1,4 @@
-var COMMON = require('./COMMON');
+var COMMON = require('./common');
 
 var UTIL = {
     cmdStatus: COMMON.cmdStatus,

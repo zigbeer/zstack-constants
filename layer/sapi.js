@@ -1,4 +1,4 @@
-var COMMON = require('./COMMON');
+var COMMON = require('./common');
 
 var SAPI = {
     cmdStatus: COMMON.cmdStatus,

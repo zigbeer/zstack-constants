@@ -1,14 +1,14 @@
 {
-  "name": "zstack-id",
-  "version": "0.0.2",
-  "description": "TI Z-Stack Identifiers of ZDO, SYS, UTIL, ... layers",
+  "name": "zstack-constants",
+  "version": "0.0.1",
+  "description": "TI Z-Stack Constants of ZDO, SYS, UTIL, ... layers",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "make test-all"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zigbeer/zstack-id.git"
+    "url": "git+https://github.com/zigbeer/zstack-constants.git"
   },
   "keywords": [
     "cc-znp",
@@ -21,7 +21,11 @@
   "author": "Simen Li",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zigbeer/zstack-id/issues"
+    "url": "https://github.com/zigbeer/zstack-constants/issues"
   },
-  "homepage": "https://github.com/zigbeer/zstack-id#readme"
+  "homepage": "https://github.com/zigbeer/zstack-constants#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
 }
