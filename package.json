@@ -1,6 +1,6 @@
 {
   "name": "zstack-constants",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "TI Z-Stack Constants of ZDO, SYS, UTIL, ... layers",
   "main": "index.js",
   "scripts": {
