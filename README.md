@@ -104,7 +104,7 @@ ZCS.getStatus('APS_NO_ACK');    // { key: 'APS_NO_ACK', value: 183 }
 | Layer     | Namespace                                                                                                                    |
 |-----------|------------------------------------------------------------------------------------------------------------------------------|
 | -         | Root space, acces constants with `ZCS.fooNamespace` or `ZCS.barProperty`. The exported properties include `BEACON_MAX_DEPTH`, `DEF_NWK_RADIUS`, and `AF_DEFAULT_RADIUS`. The exported namespaces include `cmdStatus` and `config`.      |
-| AF        | The exported namespaces of AF layer include `interpanCtl`, `networkLatencyReq`, and `options`.                               |
+| AF        | The exported namespaces of AF layer include `[cmdStatus](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/common.json)`, `[addressMode](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/common.json)`, `interpanCtl`, `networkLatencyReq`, and `options`.                               |
 | MAC       | The exported namespaces of MAC layer include `cmdStatus`, `capabInfoMask`, `logicalChannels`, `channelMask`, `securityLevel`, `addressMode`, `scanDuration`, `assocStatus`, `channelPage`, `txOpt`, `commReason`, `disassocReason`, `keyIdMode`, `beaconOrder`, `scanType`, `frontEndMode`, and `pidAttr`.     |
 | SYS       | The exported namespaces of SYS layer include `cmdStatus`, `nvItemIds`, `resetType`, `capabilities`, `osalTimerEvent`, `adcChannels`, `adcResolution`, `gpioOperation`, `sysStkTune`, `resetReason`, `nvItemInitStatus`, and `nvItemDeleteStatus`.                                      |
 | UTIL      | The exported namespaces of UTIL layer include `cmdStatus`, `devStates`, `channelMask`, `securityLevel`, `addressMode`, `getNvStatus`, `subsystemId`, `deviceType`, `keyEvent`, `keyValue`, `ledMode`, `ledNum`, `subsAction`, `ackPendingOption`, and `nodeRelation`.      |
@@ -115,7 +115,7 @@ ZCS.getStatus('APS_NO_ACK');    // { key: 'APS_NO_ACK', value: 183 }
 
 <br />
 
-* Common Properties  (For more common properties, see [common.json](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/common.json))
+* Common Properties  
     * config
     ```js
         {
@@ -153,7 +153,6 @@ ZCS.getStatus('APS_NO_ACK');    // { key: 'APS_NO_ACK', value: 183 }
         }
     ```
   
-<br />
 
 * AF Layer Namespace and Properties: [af.json](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/af.json)  
 * MAC Layer Namespace and Properties: [mac.json](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/mac.json)  
