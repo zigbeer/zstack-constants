@@ -96,20 +96,22 @@ ZCS.getStatus('APS_NO_ACK');    // { key: 'APS_NO_ACK', value: 183 }
   
 <br />
   
+[commonjs]: https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/common.json
+
 <a name="Table"></a>
 ## 5. Table of Constants
 
-* The following table lists the layers and namespaces that **zstack-constants** exports.  
+* The following table lists the layers and namespaces that **zstack-constants** exports. (The namespaces given with a link are those collected in [common.json](commonjs))  
 
 | Layer     | Namespace                                                                                                                    |
 |-----------|------------------------------------------------------------------------------------------------------------------------------|
 | -         | Root space, acces constants with `ZCS.fooNamespace` or `ZCS.barProperty`. The exported properties include `BEACON_MAX_DEPTH`, `DEF_NWK_RADIUS`, and `AF_DEFAULT_RADIUS`. The exported namespaces include `cmdStatus` and `config`.      |
-| AF        | The exported namespaces of AF layer include `[cmdStatus](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/common.json)`, `[addressMode](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/common.json)`, `interpanCtl`, `networkLatencyReq`, and `options`.                               |
-| MAC       | The exported namespaces of MAC layer include `cmdStatus`, `capabInfoMask`, `logicalChannels`, `channelMask`, `securityLevel`, `addressMode`, `scanDuration`, `assocStatus`, `channelPage`, `txOpt`, `commReason`, `disassocReason`, `keyIdMode`, `beaconOrder`, `scanType`, `frontEndMode`, and `pidAttr`.     |
-| SYS       | The exported namespaces of SYS layer include `cmdStatus`, `nvItemIds`, `resetType`, `capabilities`, `osalTimerEvent`, `adcChannels`, `adcResolution`, `gpioOperation`, `sysStkTune`, `resetReason`, `nvItemInitStatus`, and `nvItemDeleteStatus`.                                      |
-| UTIL      | The exported namespaces of UTIL layer include `cmdStatus`, `devStates`, `channelMask`, `securityLevel`, `addressMode`, `getNvStatus`, `subsystemId`, `deviceType`, `keyEvent`, `keyValue`, `ledMode`, `ledNum`, `subsAction`, `ackPendingOption`, and `nodeRelation`.      |
-| ZDO       | The exported namespaces of ZDO layer include `cmdStatus`, `capabInfoMask`, `devStates`, `logicalChannels`, `channelMask`, `scanDuration`, `status`, `initDev`, `serverCapability`, `appDevVer`, `stackProfileId`, `deviceLogicalType`, `addrReqType`, `leaveAndRemoveChild`, `leaveIndRequest`, `leaveIndRemove`, `leaveIndRejoin`, and `descCapability`.    |
-| SAPI      | The exported namespaces of SAPI layer include `cmdStatus`, `nvItemIds`, `zbDeviceInfo`, `bindAction`, `searchType`, `txOptAck`, and `nvItemIdsUint8`.                    |
+| AF        | The exported namespaces of AF layer include [`cmdStatus`](commonjs), [`addressMode`](commonjs), `interpanCtl`, `networkLatencyReq`, and `options`.                               |
+| MAC       | The exported namespaces of MAC layer include [`cmdStatus`](commonjs), [`capabInfoMask`](commonjs), [`logicalChannels`](commonjs), [`channelMask`](commonjs), [`securityLevel`](commonjs), [`addressMode`](commonjs), [`scanDuration`](commonjs), `assocStatus`, `channelPage`, `txOpt`, `commReason`, `disassocReason`, `keyIdMode`, `beaconOrder`, `scanType`, `frontEndMode`, and `pidAttr`.     |
+| SYS       | The exported namespaces of SYS layer include [`cmdStatus`](commonjs), [`nvItemIds`](commonjs), `resetType`, `capabilities`, `osalTimerEvent`, `adcChannels`, `adcResolution`, `gpioOperation`, `sysStkTune`, `resetReason`, `nvItemInitStatus`, and `nvItemDeleteStatus`.                                      |
+| UTIL      | The exported namespaces of UTIL layer include [`cmdStatus`](commonjs), [`devStates`](commonjs), [`channelMask`](commonjs), [`securityLevel`](commonjs), [`addressMode`](commonjs), `getNvStatus`, `subsystemId`, `deviceType`, `keyEvent`, `keyValue`, `ledMode`, `ledNum`, `subsAction`, `ackPendingOption`, and `nodeRelation`.      |
+| ZDO       | The exported namespaces of ZDO layer include [`cmdStatus`](commonjs), [`capabInfoMask`](commonjs), [`devStates`](commonjs), [`logicalChannels`](commonjs), [`channelMask`](commonjs), [`scanDuration`](commonjs), `status`, `initDev`, `serverCapability`, `appDevVer`, `stackProfileId`, `deviceLogicalType`, `addrReqType`, `leaveAndRemoveChild`, `leaveIndRequest`, `leaveIndRemove`, `leaveIndRejoin`, and `descCapability`.    |
+| SAPI      | The exported namespaces of SAPI layer include [`cmdStatus`](commonjs), [`nvItemIds`](commonjs), `zbDeviceInfo`, `bindAction`, `searchType`, `txOptAck`, and `nvItemIdsUint8`.                    |
 | DBG       | The exported namespaces of DBG layer include `debugThreshold` and `componentId`.                            |
 
 
