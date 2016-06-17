@@ -1,7 +1,7 @@
 {
   "name": "zstack-constants",
-  "version": "0.0.2",
-  "description": "TI Z-Stack Constants of ZDO, SYS, UTIL, ... layers",
+  "version": "0.0.4",
+  "description": "Exports constants in TI Z-Stack",
   "main": "index.js",
   "scripts": {
     "test": "make test-all"
