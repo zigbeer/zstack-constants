@@ -37,28 +37,28 @@ TI Z-Stack Constants of AF, SYS, ZDO, MAC, UTIL, SAPI, and DBG layers.
 To use a constant, just access it within the correct layer, namespace, and the property name. Here is a quick example to access the constant ACK_REQUEST of AF options:  
 
 ```js
-var ZCS = require('zstack-constants');
+var ZSC = require('zstack-constants');
 
 // Access properties under root space  
-console.log(ZCS.BEACON_MAX_DEPTH);          // 15
-console.log(ZCS.DEF_NWK_RADIUS);            // 30
-console.log(ZCS.AF_DEFAULT_RADIUS);         // 30
+console.log(ZSC.BEACON_MAX_DEPTH);          // 15
+console.log(ZSC.DEF_NWK_RADIUS);            // 30
+console.log(ZSC.AF_DEFAULT_RADIUS);         // 30
 
 // Access constants in config and cmdStatus namespaces  
-console.log(ZCS.config.NWK_MAX_DEVICES);    // 21
-console.log(ZCS.cmdStatus.BUFFER_FULL);     // 17
+console.log(ZSC.config.NWK_MAX_DEVICES);    // 21
+console.log(ZSC.cmdStatus.BUFFER_FULL);     // 17
 
 // Access constants in options and interpanCtl namespaces under AF layer
-console.log(ZCS.AF.options.ACK_REQUEST);    // 16
-console.log(ZCS.AF.interpanCtl.SET);        // 1
+console.log(ZSC.AF.options.ACK_REQUEST);    // 16
+console.log(ZSC.AF.interpanCtl.SET);        // 1
 
 // Access constants in adcResolution and gpioOperation namespaces under SYS layer
-console.log(ZCS.SYS.adcResolution.BIT_10);  // 1
-console.log(ZCS.SYS.gpioOperation.TOGGLE);  // 4
+console.log(ZSC.SYS.adcResolution.BIT_10);  // 1
+console.log(ZSC.SYS.gpioOperation.TOGGLE);  // 4
 
 // Access constants in stackProfileId and deviceLogicalType namespaces under ZDO layer
-console.log(ZCS.ZDO.stackProfileId.ZIGBEEPRO_PROFILE);  // 2
-console.log(ZCS.ZDO.deviceLogicalType.ROUTER);          // 1
+console.log(ZSC.ZDO.stackProfileId.ZIGBEEPRO_PROFILE);  // 2
+console.log(ZSC.ZDO.deviceLogicalType.ROUTER);          // 1
 ```
   
 <br />
@@ -70,7 +70,7 @@ console.log(ZCS.ZDO.deviceLogicalType.ROUTER);          // 1
 
 *************************************************
 
-### ZCS.getStatus(code)  
+### ZSC.getStatus(code)  
 Get the definition of a status code. This method accepts an input code in string or in number, and it will return an object like `{ key: 'BUFFER_FULL', value: 17 }` to tell the status definition. This method will return `undefined` if the given status code is not found.  
 
 **Arguments:**  
@@ -84,11 +84,11 @@ Get the definition of a status code. This method accepts an input code in string
 **Examples:** 
 
 ```js
-var ZCS = require('zstack-constants');
+var ZSC = require('zstack-constants');
 
-ZCS.getStatus(16);              // { key: 'MEM_ERROR', value: 16 }
-ZCS.getStatus(183);             // { key: 'APS_NO_ACK', value: 183 }
-ZCS.getStatus('APS_NO_ACK');    // { key: 'APS_NO_ACK', value: 183 }
+ZSC.getStatus(16);              // { key: 'MEM_ERROR', value: 16 }
+ZSC.getStatus(183);             // { key: 'APS_NO_ACK', value: 183 }
+ZSC.getStatus('APS_NO_ACK');    // { key: 'APS_NO_ACK', value: 183 }
 
 ```
 *************************************************
@@ -104,7 +104,7 @@ ZCS.getStatus('APS_NO_ACK');    // { key: 'APS_NO_ACK', value: 183 }
 
 | Layer     | Namespace                                                                                                                    |
 |-----------|------------------------------------------------------------------------------------------------------------------------------|
-| -         | Root space, acces constants with `ZCS.fooNamespace` or `ZCS.barProperty`. The exported properties include `BEACON_MAX_DEPTH`, `DEF_NWK_RADIUS`, and `AF_DEFAULT_RADIUS`. The exported namespaces include `cmdStatus` and `config`.      |
+| -         | Root space, acces constants with `ZSC.fooNamespace` or `ZSC.barProperty`. The exported properties include `BEACON_MAX_DEPTH`, `DEF_NWK_RADIUS`, and `AF_DEFAULT_RADIUS`. The exported namespaces include `cmdStatus` and `config`.      |
 | AF        | The exported namespaces of AF layer include [`cmdStatus`][commonjs], [`addressMode`][commonjs], `interpanCtl`, `networkLatencyReq`, and `options`.                               |
 | MAC       | The exported namespaces of MAC layer include [`cmdStatus`][commonjs], [`capabInfoMask`][commonjs], [`logicalChannels`][commonjs], [`channelMask`][commonjs], [`securityLevel`][commonjs], [`addressMode`][commonjs], [`scanDuration`][commonjs], `assocStatus`, `channelPage`, `txOpt`, `commReason`, `disassocReason`, `keyIdMode`, `beaconOrder`, `scanType`, `frontEndMode`, and `pidAttr`.     |
 | SYS       | The exported namespaces of SYS layer include [`cmdStatus`][commonjs], [`nvItemIds`][commonjs], `resetType`, `capabilities`, `osalTimerEvent`, `adcChannels`, `adcResolution`, `gpioOperation`, `sysStkTune`, `resetReason`, `nvItemInitStatus`, and `nvItemDeleteStatus`.                                      |

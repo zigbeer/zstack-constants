@@ -1,6 +1,6 @@
 {
   "name": "zstack-constants",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Exports constants in TI Z-Stack",
   "main": "index.js",
   "scripts": {
