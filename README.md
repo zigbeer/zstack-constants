@@ -70,7 +70,7 @@ console.log(ZSC.ZDO.deviceLogicalType.ROUTER);          // 1
 
 *************************************************
 
-### ZSC.getStatus(code)  
+### .getStatus(code)  
 Get the definition of a status code. This method accepts an input code in string or in number, and it will return an object like `{ key: 'BUFFER_FULL', value: 17 }` to tell the status definition. This method will return `undefined` if the given status code is not found.  
 
 **Arguments:**  
