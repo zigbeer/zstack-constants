@@ -1,8 +1,5 @@
-var fs = require('fs'),
-    path = require('path'),
-    COMMON = require('./common');
-
-var SYS = JSON.parse(fs.readFileSync(path.join(__dirname, 'defs', 'sys.json')));
+var COMMON = require('./common'),
+    SYS = require('./defs/sys.json');
 
 SYS = Object.assign(SYS, {
     cmdStatus: COMMON.cmdStatus,

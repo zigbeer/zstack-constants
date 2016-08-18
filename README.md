@@ -1,5 +1,5 @@
 # zstack-constants
-TI Z-Stack Constants of AF, SYS, ZDO, MAC, UTIL, SAPI, and DBG layers.  
+Exports TI Z-Stack Constants of AF, SYS, ZDO, MAC, UTIL, SAPI, and DBG layers.  
 
 [![Travis branch](https://img.shields.io/travis/zigbeer/zstack-constants/master.svg?maxAge=2592000)](https://travis-ci.org/zigbeer/zstack-constants)
 [![npm](https://img.shields.io/npm/v/zstack-constants.svg?maxAge=2592000)](https://www.npmjs.com/package/zstack-constants)
@@ -116,7 +116,7 @@ ZSC.getStatus('APS_NO_ACK');    // { key: 'APS_NO_ACK', value: 183 }
 
 <br />
 
-* Common Properties  
+* Common Properties
     * config
     ```js
         {
@@ -153,15 +153,10 @@ ZSC.getStatus('APS_NO_ACK');    // { key: 'APS_NO_ACK', value: 183 }
             // please see common.json for more information
         }
     ```
-  
-
-* AF Layer Namespace and Properties: [af.json](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/af.json)  
-* MAC Layer Namespace and Properties: [mac.json](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/mac.json)  
-* SYS Layer Namespace and Properties: [sys.json](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/sys.json)  
-* UTIL Layer Namespace and Properties: [util.json](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/util.json)  
-* ZDO Layer Namespace and Properties: [zdo.json](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/zdo.json)  
-* SAPI Layer Namespace and Properties: [sapi.json](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/sapi.json)  
-* DBG Layer Namespace and Properties: [dbg.json](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/dbg.json)  
-  
-
-<br />
+* AF Layer Namespace and Properties: [af.json](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/af.json)
+* MAC Layer Namespace and Properties: [mac.json](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/mac.json)
+* SYS Layer Namespace and Properties: [sys.json](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/sys.json)
+* UTIL Layer Namespace and Properties: [util.json](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/util.json)
+* ZDO Layer Namespace and Properties: [zdo.json](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/zdo.json)
+* SAPI Layer Namespace and Properties: [sapi.json](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/sapi.json)
+* DBG Layer Namespace and Properties: [dbg.json](https://github.com/zigbeer/zstack-constants/blob/master/layer/defs/dbg.json)

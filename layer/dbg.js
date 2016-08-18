@@ -1,4 +1,1 @@
-var fs = require('fs'),
-    path = require('path');
-
-module.exports = JSON.parse(fs.readFileSync(path.join(__dirname, 'defs', 'dbg.json')));
+module.exports  = require('./defs/dbg.json');

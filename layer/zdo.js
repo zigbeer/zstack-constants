@@ -1,8 +1,5 @@
-var fs = require('fs'),
-    path = require('path'),
-    COMMON = require('./common');
-
-var ZDO = JSON.parse(fs.readFileSync(path.join(__dirname, 'defs', 'zdo.json')));
+var COMMON = require('./common'),
+    ZDO = require('./defs/zdo.json');
 
 ZDO = Object.assign(ZDO, {
     cmdStatus: COMMON.cmdStatus,

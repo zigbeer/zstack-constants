@@ -1,8 +1,5 @@
-var fs = require('fs'),
-    path = require('path'),
-    COMMON = require('./common');
-
-var MAC = JSON.parse(fs.readFileSync(path.join(__dirname, 'defs', 'mac.json')));
+var COMMON = require('./common'),
+    MAC = require('./defs/mac.json');
 
 MAC = Object.assign(MAC, {
     cmdStatus: COMMON.cmdStatus,
