@@ -1,6 +1,6 @@
 {
   "name": "zstack-constants",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Exports TI Z-Stack Constants of AF, SYS, ZDO, MAC, UTIL, SAPI, and DBG layers.",
   "main": "index.js",
   "scripts": {
